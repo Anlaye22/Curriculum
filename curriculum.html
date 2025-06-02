@@ -2,18 +2,23 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Curriculum</title>
+  <title>Curriculum - Andrés Layedra</title>
   <meta name="keywords" content="curriculum, CV, experiencia, educación, habilidades">
-  <meta name="description" content="Curriculum vitae con información personal, experiencia laboral, educación y habilidades.">
-  <meta name="author" content="Tu Nombre">
+  <meta name="description" content="Curriculum vitae profesional de Andrés Layedra, desarrollador web full stack.">
+  <meta name="author" content="Andrés Layedra">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="stylesheets/style.css">
 </head>
-
 <body>
   <header>
     <h1>Andrés Layedra</h1>
+    <p><strong>Desarrollador Web Full Stack | Apasionado por el código limpio y soluciones creativas</strong></p>
     <nav>
       <ul>
+        <li><a href="#inicio">Inicio</a></li>
         <li><a href="#perfil">Perfil</a></li>
         <li><a href="#experiencia">Experiencia</a></li>
         <li><a href="#educacion">Educación</a></li>
@@ -23,278 +28,199 @@
       </ul>
     </nav>
   </header>
+
   <main>
+    <section id="inicio" style="text-align:center; padding: 3rem 1rem;">
+      <h2 style="font-size: 2.5rem;">Hola, soy Andrés 👋</h2>
+      <p style="max-width: 700px; margin: auto;">Especialista en desarrollo web con más de 5 años de experiencia creando experiencias digitales que funcionan, impactan y comunican.</p>
+      <a href="#contacto" style="display:inline-block; margin-top: 1.5rem; padding: 0.75rem 1.5rem; background-color:#00bcd4; color:white; border-radius:8px; text-decoration:none; font-weight:600;">Contáctame</a>
+    </section>
 
     <section id="perfil">
       <h2>Perfil</h2>
       <div class="perfil-container">
         <img src="./img/perfil.gif" alt="Foto de perfil" class="foto-perfil">
-        <p>Breve descripción sobre ti.</p>
-        <p>Visita mi perfil de GitHub para ver mis proyectos: <a href="https://github.com/Anlaye22" target="_blank" rel="noopener noreferrer">github.com/Anlaye22</a></p>
+        <div>
+          <p>Desarrollador con enfoque en soluciones frontend/backend, experiencia en arquitectura de software y pasión por proyectos creativos.</p>
+          <p>Visita mis perfiles:
+            <a href="https://github.com/Anlaye22" target="_blank">GitHub</a> |
+            <a href="https://linkedin.com/in/anlaye22" target="_blank">LinkedIn</a>
+          </p>
+        </div>
       </div>
     </section>
 
     <section id="experiencia">
       <h2>Experiencia</h2>
       <p>Mi trayectoria profesional ordenada desde la más reciente:</p>
-      <ol>
-        <li>
-          <h3>Desarrollador Senior - Empresa TechSolutions</h3>
-          <p>2023 - Presente</p>
-          <p>Desarrollo de aplicaciones web utilizando React y Node.js. Liderazgo de equipo de 5 desarrolladores.</p>
-        </li>
-        <li>
-          <h3>Desarrollador Web - Consultora Digital</h3>
-          <p>2020 - 2023</p>
-          <p>Diseño y desarrollo de sitios web responsive para clientes de diversos sectores.</p>
-        </li>
-        <li>
-          <h3>Programador Junior - Startup InnovaCode</h3>
-          <p>2018 - 2020</p>
-          <p>Colaboración en el desarrollo de aplicaciones móviles y mantenimiento de bases de datos.</p>
-        </li>
-      </ol>
+      <article>
+        <h3>Desarrollador Senior - TechSolutions</h3>
+        <p>2023 - Presente</p>
+        <p>Desarrollo de aplicaciones web con React y Node.js. Lideré un equipo de 5 desarrolladores y optimicé el rendimiento general del sistema en un 30%.</p>
+      </article>
+      <article>
+        <h3>Desarrollador Web - Consultora Digital</h3>
+        <p>2020 - 2023</p>
+        <p>Diseño y desarrollo de sitios web responsive para múltiples sectores utilizando metodologías ágiles.</p>
+      </article>
+      <article>
+        <h3>Programador Junior - InnovaCode</h3>
+        <p>2018 - 2020</p>
+        <p>Participé en desarrollo móvil y mantenimiento de bases de datos SQL y MongoDB.</p>
+      </article>
     </section>
 
     <section id="educacion">
       <h2>Educación</h2>
-      <p>Mi formación académica desde la más reciente:</p>
-      <ol>
-        <li>
-          <h3>Maestría en Ingeniería de Software</h3>
-          <p>Universidad Tecnológica Avanzada, 2019 - 2021</p>
-          <p>Especialización en desarrollo de aplicaciones web y móviles.</p>
-        </li>
-        <li>
-          <h3>Ingeniería en Sistemas Computacionales</h3>
-          <p>Escuela Superior Politécnica del Litoral (ESPOL), 2014 - 2018</p>
-          <p>Graduado con honores. Proyecto final: Sistema de gestión de inventarios.</p>
-        </li>
-        <li>
-          <h3>Bachillerato Técnico en Informática</h3>
-          <p>Colegio Tecnológico Nacional, 2011 - 2014</p>
-          <p>Formación en fundamentos de programación y redes.</p>
-        </li>
-        <li>
-          <h3>Educación Básica</h3>
-          <p>Escuela Modelo, 2003 - 2011</p>
-        </li>
-      </ol>
+      <p>Formación académica:</p>
+      <div class="card">
+        <h3>Maestría en Ingeniería de Software</h3>
+        <p><strong>Universidad Tecnológica Avanzada</strong> — 2019 - 2021</p>
+        <p>Especialización en desarrollo web y móvil.</p>
+      </div>
+      <div class="card">
+        <h3>Ingeniería en Sistemas Computacionales</h3>
+        <p><strong>ESPOL</strong> — 2014 - 2018</p>
+        <p>Proyecto destacado: Sistema de gestión de inventarios.</p>
+      </div>
+      <div class="card">
+        <h3>Bachillerato Técnico en Informática</h3>
+        <p>Colegio Tecnológico Nacional — 2011 - 2014</p>
+      </div>
     </section>
+
     <section id="habilidades">
       <h2>Habilidades</h2>
-      
-      <h3>Competencias como desarrollador web:</h3>
+      <h3>Competencias:</h3>
       <ul>
-        <li>Desarrollo frontend con HTML5, CSS3 y JavaScript</li>
-        <li>Frameworks: React, Angular y Vue.js</li>
-        <li>Desarrollo backend con Node.js, Python y PHP</li>
-        <li>Bases de datos: MySQL, MongoDB y PostgreSQL</li>
-        <li>Control de versiones con Git</li>
-        <li>Metodologías ágiles: Scrum y Kanban</li>
-        <li>Diseño responsivo y experiencia de usuario</li>
-        <li>Optimización y rendimiento web</li>
+        <li>Frontend: HTML5, CSS3, JavaScript</li>
+        <li>Frameworks: React, Angular, Vue</li>
+        <li>Backend: Node.js, Python, PHP</li>
+        <li>Base de datos: MySQL, MongoDB, PostgreSQL</li>
+        <li>Versionamiento: Git</li>
       </ul>
-      
-      <h3>Experiencia con lenguajes de programación:</h3>
+      <h3>Lenguajes de programación:</h3>
       <table>
-        <tr>
-          <th>Lenguaje</th>
-          <th>Horas dedicadas</th>
-          <th>Proyectos realizados</th>
-        </tr>
-        <tr>
-          <th>JavaScript</th>
-          <td>2500+</td>
-          <td>Sistema de gestión de clientes, E-commerce, Dashboard analítico</td>
-        </tr>
-        <tr>
-          <th>Python</th>
-          <td>1800+</td>
-          <td>API RESTful, Análisis de datos, Automatización de procesos</td>
-        </tr>
-        <tr>
-          <th>PHP</th>
-          <td>1200+</td>
-          <td>CMS personalizado, Sistema de reservas, Plataforma educativa</td>
-        </tr>
-        <tr>
-          <th>Java</th>
-          <td>900+</td>
-          <td>Aplicación de escritorio, Microservicios, API bancaria</td>
-        </tr>
+        <tr><th>Lenguaje</th><th>Horas</th><th>Proyectos</th></tr>
+        <tr><td>JavaScript</td><td>2500+</td><td>CRM, E-commerce, Dashboard</td></tr>
+        <tr><td>Python</td><td>1800+</td><td>APIs, análisis de datos</td></tr>
+        <tr><td>PHP</td><td>1200+</td><td>CMS, reservas</td></tr>
+        <tr><td>Java</td><td>900+</td><td>Apps de escritorio y microservicios</td></tr>
       </table>
-
       <div class="video-container">
-        <h3>Mi Video</h3>
-        <iframe 
-          width="560" 
-          height="315" 
-          src="https://www.youtube.com/embed/fabDpTOfKns" 
-          title="YouTube video player" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-          allowfullscreen>
-        </iframe>
+        <h3>Video de presentación</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fabDpTOfKns" allowfullscreen></iframe>
       </div>
     </section>
-  
+
     <section id="referencias">
       <h2>Referencias</h2>
-      <p>Testimonios de personas con las que he trabajado:</p>
-      
-      <article class="testimonio">
-        <blockquote>
-          <p>"Andrés demostró ser un desarrollador excepcional, siempre entregando soluciones creativas y eficientes a los problemas más complejos."</p>
-        </blockquote>
-        <footer>
-          <div class="referencia-info">
-            <h3>Carlos Mendoza</h3>
-            <p>Director de Tecnología - TechSolutions</p>
+      <section class="referencias-grid">
+    
+        <article class="testimonio">
+          <header class="referencia-header">
+            <figure>
+              <img src="./img/hombre-1.jpg" alt="Carlos Mendoza" class="referencia-foto">
+              <figcaption>
+                <h3>Carlos Mendoza</h3>
+                <p>Director de Tecnología - TechSolutions</p>
+              </figcaption>
+            </figure>
+          </header>
+          <section class="referencia-conexion">
             <p>Trabajamos juntos en el desarrollo de una plataforma de comercio electrónico que aumentó las ventas en un 45% durante el primer trimestre tras su lanzamiento.</p>
-          </div>
-        </footer>
-      </article>
-      
-      <article class="testimonio">
-        <blockquote>
-          <p>"Su capacidad para adaptarse a nuevas tecnologías y su compromiso con la calidad del código hacen de Andrés un profesional altamente valioso para cualquier equipo."</p>
-        </blockquote>
-        <footer>
-          <div class="referencia-info">
-            <h3>María Jiménez</h3>
-            <p>Lead Developer - Consultora Digital</p>
+          </section>
+          <blockquote class="referencia-opinion">
+            <p>"Andrés demostró ser un desarrollador excepcional, siempre entregando soluciones creativas y eficientes a los problemas más complejos."</p>
+          </blockquote>
+        </article>
+    
+        <article class="testimonio">
+          <header class="referencia-header">
+            <figure>
+              <img src="./img/mujer-1.jpg" alt="María Jiménez" class="referencia-foto">
+              <figcaption>
+                <h3>María Jiménez</h3>
+                <p>Lead Developer - Consultora Digital</p>
+              </figcaption>
+            </figure>
+          </header>
+          <section class="referencia-conexion">
             <p>Colaboramos en múltiples proyectos web para clientes internacionales, donde Andrés lideró el desarrollo frontend y la implementación de características responsivas.</p>
-          </div>
-        </footer>
-      </article>
-      
-      <article class="testimonio">
-        <blockquote>
-          <p>"Andrés no solo es técnicamente competente, sino que también tiene excelentes habilidades de comunicación y trabajo en equipo. Siempre está dispuesto a ayudar y compartir conocimientos."</p>
-        </blockquote>
-        <footer>
-          <div class="referencia-info">
-            <h3>Roberto Sánchez</h3>
-            <p>CEO - InnovaCode</p>
-            <p>Andrés comenzó como desarrollador junior en nuestra startup y rápidamente demostró su potencial, asumiendo responsabilidades adicionales y contribuyendo significativamente al crecimiento del equipo.</p>
-          </div>
-        </footer>
-      </article>
+          </section>
+          <blockquote class="referencia-opinion">
+            <p>"Su capacidad para adaptarse a nuevas tecnologías y su compromiso con la calidad del código hacen de Andrés un profesional altamente valioso para cualquier equipo."</p>
+          </blockquote>
+        </article>
+    
+        <article class="testimonio">
+          <header class="referencia-header">
+            <figure>
+              <img src="./img/hombre-2.jpg" alt="Roberto Sánchez" class="referencia-foto">
+              <figcaption>
+                <h3>Roberto Sánchez</h3>
+                <p>CEO - InnovaCode</p>
+              </figcaption>
+            </figure>
+          </header>
+          <section class="referencia-conexion">
+            <p>Andrés comenzó como desarrollador junior en nuestra startup y rápidamente demostró su potencial, asumiendo responsabilidades adicionales y contribuyendo al crecimiento del equipo.</p>
+          </section>
+          <blockquote class="referencia-opinion">
+            <p>"Andrés no solo es técnicamente competente, sino que también tiene excelentes habilidades de comunicación y trabajo en equipo. Siempre está dispuesto a ayudar y compartir conocimientos."</p>
+          </blockquote>
+        </article>
+    
+      </section>
     </section>
     
+
     <section id="contacto">
       <h2>Contacto</h2>
-      <p>Dirección: Calle Ejemplo, Ciudad, País</p>
-      <p>Teléfono: +34 123 456 789</p>
-      <p>Email: ejemplo@email.com</p>
+      <p>Email: ejemplo@email.com | Tel: +34 123 456 789</p>
       <div class="mapa">
-        <h3>Ubicación: Avenida Principal de la ESPOL</h3>
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.0117282181717!2d-79.96731872422827!3d-2.1478948377377116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4c5c16!2sEscuela%20Superior%20Polit%C3%A9cnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses!2sec!4v1716098543736!5m2!1ses!2sec" 
-          width="100%" 
-          height="300" 
-          style="border:0;" 
-          allowfullscreen="" 
-          loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="100%" height="300"></iframe>
       </div>
-      
       <div class="formulario-aplicacion">
-        <h3>Formulario de Aplicación Directa</h3>
-        <p>Si eres reclutador o empresa y deseas contactarme para iniciar un proceso de selección, puedes hacerlo directamente a través de este formulario:</p>
-        
+        <h3>Formulario de Aplicación</h3>
         <form action="#" method="post">
-          <div class="form-grupo">
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="control1" name="nombre" required>
-          </div>
-          
-          <div class="form-grupo">
-            <label for="empresa">Empresa:</label>
-            <input type="text" id="empresa" name="empresa" required>
-          </div>
-          
-          <div class="form-grupo">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          
-          <div class="form-grupo">
-            <label for="telefono">Teléfono:</label>
-            <input type="tel" id="telefono" name="telefono">
-          </div>
-          
-          <div class="form-grupo">
-            <label for="posicion">Posición ofertada:</label>
-            <input type="text" id="posicion" name="posicion" required>
-          </div>
-          
-          <div class="form-grupo">
-            <label for="mensaje">Mensaje adicional:</label>
-            <textarea id="mensaje" name="mensaje" rows="4"></textarea>
-          </div>
-          
-          <div class="form-grupo radio-section">
-            <p class="radio-title">Tipo de oportunidad laboral:</p>
-            <div class="radio-item">
-              <input type="radio" id="tiempo-completo" name="tipo-trabajo" value="tiempo-completo" required>
-              <label for="tiempo-completo">Tiempo completo</label>
-            </div>
-            <div class="radio-item">
-              <input type="radio" id="medio-tiempo" name="tipo-trabajo" value="medio-tiempo">
-              <label for="medio-tiempo">Medio tiempo</label>
-            </div>
-            <div class="radio-item">
-              <input type="radio" id="freelance" name="tipo-trabajo" value="freelance">
-              <label for="freelance">Freelance / Proyecto</label>
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="remoto" name="modalidad" value="remoto">
-              <label for="remoto">Trabajo remoto (compatible con cualquier modalidad)</label>
-            </div>
-          </div>
-          
-          <div class="form-grupo checkbox-section">
-            <p class="checkbox-title">Áreas de interés:</p>
-            <div class="checkbox-item">
-              <input type="checkbox" id="desarrollo-web" name="area" value="desarrollo-web">
-              <label for="desarrollo-web">Desarrollo Web</label>
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="desarrollo-movil" name="area" value="desarrollo-movil">
-              <label for="desarrollo-movil">Desarrollo Móvil</label>
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="diseno-ui" name="area" value="diseno-ui">
-              <label for="diseno-ui">Diseño UI/UX</label>
-            </div>
-            <div class="checkbox-item">
-              <input type="checkbox" id="datos" name="area" value="datos">
-              <label for="datos">Análisis de Datos</label>
-            </div>
-          </div>
-          
-          <div class="form-grupo">
-            <div class="checkbox-item">
-              <input type="checkbox" id="terminos" name="terminos" value="acepto" required>
-              <label for="terminos">Acepto los términos de privacidad y el tratamiento de mis datos</label>
-            </div>
-          </div>
-          
-          <div class="form-grupo">
-            <button type="submit">Enviar solicitud</button>
-          </div>
+          <input type="text" name="nombre" placeholder="Tu nombre" required>
+          <input type="email" name="email" placeholder="Tu correo" required>
+          <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea>
+
+          <fieldset class="radio-section">
+            <legend>Tipo de oportunidad laboral:</legend>
+            <label><input type="radio" name="tipo-trabajo" value="tiempo-completo" required> Tiempo completo</label>
+            <label><input type="radio" name="tipo-trabajo" value="medio-tiempo"> Medio tiempo</label>
+            <label><input type="radio" name="tipo-trabajo" value="freelance"> Freelance / Proyecto</label>
+            <label><input type="checkbox" name="modalidad" value="remoto"> Trabajo remoto</label>
+          </fieldset>
+
+          <fieldset class="checkbox-section">
+            <legend>Áreas de interés:</legend>
+            <label><input type="checkbox" name="area" value="desarrollo-web"> Desarrollo Web</label>
+            <label><input type="checkbox" name="area" value="desarrollo-movil"> Desarrollo Móvil</label>
+            <label><input type="checkbox" name="area" value="diseno-ui"> Diseño UI/UX</label>
+            <label><input type="checkbox" name="area" value="datos"> Análisis de Datos</label>
+          </fieldset>
+
+          <label><input type="checkbox" name="terminos" required> Acepto los términos de privacidad</label>
+
+          <button type="submit">Enviar</button>
         </form>
       </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Andrés Layedra. Todos los derechos reservados.</p>
-  </footer>
-  
-</body>
+  <a href="#inicio" class="scroll-top" title="Volver arriba">⬆</a>
 
+  <footer>
+    <p>&copy; 2025 Andrés Layedra</p>
+    <p>
+      <a href="alayedra@espol.edu.ec">Email</a> |
+      <a href="https://anlaye22.github.io/Anlaye22/">GitHub</a> |
+      <a href="https://www.linkedin.com/in/andres-layedra-070425348/">LinkedIn</a>
+    </p>
+  </footer>
+</body>
 </html>
