@@ -1,73 +1,181 @@
-/* Aplica la fuente a todos los elementos */
-* {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
 }
 
-/* Estilos para el título principal */
-h1 {
+header {
+  background-color: #004080;
+  color: white;
+  padding: 1rem 2rem;
   text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
   font-weight: bold;
-  font-family: "Tangerine", cursive;
-} 
-/* Estilos para la imagen con id photo */
-#photo {
-  width: 8vw;
-  height: auto;
 }
 
-/* Estilos para los subtítulos */
-.h2{
-  color: rgba(5, 124, 1, 0.89);
-  text-transform: uppercase;
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background-color: #fff;
 }
 
-
-footer p {
-
-    /* Alineación del texto a la derecha */
-    text-align: right;
-
-    /* Estilo de fuente itálica */
-    font-style: italic;
-
-}
-
-nav > ul {
-
-    /* Eliminar los estilos de lista predeterminados */
-    list-style: none;
-
-}
-
+/* Secciones */
 section {
-
-    /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
-    border: 0.2pt solid #cedddd;
-
-    /* margen (espacio externo) superior, derecho, abajo e izquierda */
-    margin: 4px 2px 8px 2px;
-
-    /* relleno (espacio interno) de
-    1.5% en la parte superior e inferior y
-    0.8% a los lados derecho e izquierdo. */
-
-    padding: 1.5% 0.8%;
-
-    /* Margen inferior ajustado */
-    margin-bottom: 1.2rem;
-
+  margin-bottom: 3rem;
 }
 
+section h2 {
+  color: #004080;
+  border-bottom: 2px solid #004080;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
 
-section {
+/* Perfil */
+.perfil-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
 
-   /* borde redondeado con un radio de 5 píxeles */
-   -webkit-border-radius: 5px;
-   -moz-border-radius: 5px;
-   border-radius: 5px;
+.foto-perfil {
+  width: 150px;
+  border-radius: 50%;
+}
 
-   /* sombra a un elemento */
-   -webkit-box-shadow: 3px 3px 1px 0px rgba(188, 41, 41, 0.6);
-   -moz-box-shadow: 3px 3px 1px 0px rgba(7, 81, 209, 0.808);
-   box-shadow: 3px 3px 1px 0px rgba(174, 11, 63, 0.6);
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+th, td {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+th {
+  background-color: #e6f0ff;
+}
+
+/* Video */
+.video-container {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+}
+
+/* Testimonios */
+.testimonio {
+  background-color: #f0f8ff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-left: 5px solid #004080;
+}
+
+/* Formulario */
+.formulario-aplicacion {
+  background-color: #f2f2f2;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.form-grupo {
+  margin-bottom: 1rem;
+}
+
+.form-grupo label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.form-grupo input,
+.form-grupo textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.radio-item,
+.checkbox-item {
+  margin: 0.5rem 0;
+}
+
+button[type="submit"] {
+  background-color: #004080;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #003060;
+}
+
+/* Mapa */
+.mapa iframe {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Diseño responsive por columnas */
+@media (min-width: 768px) {
+  .perfil-container {
+    flex-direction: row;
+  }
+
+  .referencia-info {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .form-grupo.radio-section,
+  .form-grupo.checkbox-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: #004080;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
 }
