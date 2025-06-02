@@ -321,3 +321,48 @@ input[type="checkbox"] {
 .formulario-aplicacion button[type="submit"]:hover {
   background-color: #0097a7;
 }
+
+a {
+  text-decoration: none;
+}
+
+a i {
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+a:hover i {
+  transform: scale(1.2);
+}
+
+.icon-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.icon-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 0.85rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.icon-links a:hover {
+  transform: scale(1.1);
+  color: #00bcd4;
+}
+
+.icon-links i {
+  font-size: 1.8rem;
+  color: #00bcd4;
+}
+
+.icon-links span {
+  margin-top: 0.4rem;
+}
